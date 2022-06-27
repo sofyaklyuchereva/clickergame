@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #090929, #271f79, #0c092e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Poppins;
+    line-height: 1.3;
+    justify-content:center;
+}
+.container{
+    block-size: fit-content;
+    margin: 30px;
+    transform: translateX(50px);
+    position:absolute;
+    align-content: center;
+    text-align: center;
+    border:5px solid rgba(255, 255, 255, 0.185);
+    width: max-content;
+    padding: 20px;
+    border-radius: 50px;
+    transition:border-color 250ms;
+    background-color: #8c8cc725;
+    max-width: 600px;
+}
+.container:hover{
+    border-color: white;
+}
+.market{
+    display: block;
+    block-size: fit-content;
+    margin: 30px;
+    position:absolute;
+    transform: translateX(1200px);
+    text-align: center;
+    border:5px solid rgba(255, 255, 255, 0.185);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 50px;
+    transition:border-color 250ms;
+    background-color: #8c8cc725;
+    max-width: 600px;
+}
+.market:hover{
+    border-color: white;
+}
+.tips{
+    display: block;
+    block-size: fit-content;
+    margin: 30px;
+    position:absolute;
+    transform: translateX(650px);
+    text-align: center;
+    border:5px solid rgba(255, 255, 255, 0.185);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 50px;
+    transition:border-color 250ms;
+    background-color: #8c8cc725;
+    max-width: 400px;
+    
+}
+.tips:hover{
+    border-color: white;
+}
+.tipsbuttons{
+    transform: translateX(-20px);
+}
+.hiddenButton{
+    block-size: fit-content;
+    margin: 30px;
+    position:absolute;
+    transform: translateY(730px);
+    left: 960px;
+    text-align: center;;
+    width: fit-content;
+}
+#unlockMe{
+    color: #8c8cc7;
+}
+.unlocker{
+    margin-top: 100px;;
+    margin-bottom: 70px;
+}
+h{
+   font-size: 45px; 
+   color: rgb(255, 255, 255);
+}
+p{
+    color:white;
+    font-size:medium;
+    margin-top: 10px;
+    margin-bottom: 15px;;
+}
+li{
+    list-style:none;
+    margin: 10%;
+    padding-right: 60px;
+    width: max-content;
+    justify-content: flex;
+   
+}
+.upgrades{
+    margin-top: 30px;
+    transform: translateX(-20px);
+}
+.experienceUpgrades{
+    transform: translateX(-15px);
+}
+#clickerButton{
+    align-items: flex-start;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.616);
+    font-size: x-large;
+    letter-spacing: 1px;;
+    background: linear-gradient(to left, #eea849, #f46b45 110%);
+    border: 0px solid transparent;
+    transition: background 250ms;
+    transition: color 250ms ;
+}
+#clickerButton:hover{
+    background: linear-gradient(to left, #eea849, #f46b45 95%);
+}
+#clickerButton:focus:active{
+    color: white;
+}
+button{
+    align-self:baseline;
+    padding: 9px;
+    font-family: Poppins;
+    border-radius: 30px;
+    width: 300px;
+    background: linear-gradient(to left, rgb(255, 255, 255), #8c8cc7); 
+    border: 0px solid transparent;
+    transition: background ease-in ;
+}
+button:focus:active{
+    background: linear-gradient(to left, rgb(255, 255, 255), #a3a3d4); 
+}
+span{
+    padding-inline: 25px;
+    color: white;
+}
+#clicks{
+    font-size: 50px;
+    color: orangered;
+}
+.infoText{
+    color:#8c8cc7;
+}
+.upgradePrice{
+    color: rgb(214, 68, 15)
+}
+.wheel{
+    color: #8c8cc7;
+    font-size: x-large;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}

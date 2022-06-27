@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h>Click me, will you?</h>
+            <p>Play smart, not hard.</p>
+            <label class="infoText">Level:<b><span id="level">0</span></b></label>  <label class="infoText">Experience:<b><span id="experienceLevel" style="color:'white'">0</span></b></label>  <label class="infoText">Click Rate:<b><span id="clickRate">1</span></b></label>
+            <br><br><span id="clicks">0</span><br>
+            <button id="clickerButton" onclick="onClick()">The Infamous Clicker</button>
+            <div class="upgrades" style="font-size:small">
+                <ul>   
+                    <li><button id="upgrade" onclick="levelUpgrade()">Buy <label id="levelUpgradeValue">1</label> lvl for <label id="levelPrice"  class="upgradePrice">15</label> <label  class="upgradePrice">clicks</label></button></li>
+                    <li> <button id="upgradeClickerRate" onclick="clickerRateUpgrade()">Buy <label id="clickRateUpgrade">7</label> click rates for <label id="ratePrice" class="upgradePrice">5</label> <label class="upgradePrice">lvl</label> </button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="market">
+            <h id="experienceMarket">Experience Market</h>
+            <div>
+                <ul class="experienceUpgrades">
+                    <li><button id="expClicks" onclick="expClicks()">Buy <b><label id="expClicksUpgd" >20000</label></b> clicks for <label id="expClicksPrice"  class="upgradePrice">25</label> <label class="upgradePrice">XP</label></button></li>
+                    <li><button id="expLevels" onclick="expLevels()"> Buy <b><label id="expLevelsUpgd">50</label></b> levels for <label id="expLevelsPrice"  class="upgradePrice">50</label> <label class="upgradePrice">XP</label></button></li>
+                    <li> <button id="expLuck" onclick="expLuck()"> Get lucky for <b><label id="expLuckPrice" class="upgradePrice">100</label></b> <label class="upgradePrice">XP</label> </button></li>
+                </ul>
+                <div class="wheel">
+                    <label id="luckRandomizer">Here is your <label style="color: orangered;">Get Lucky</label> upgrade prize!</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h id="orangeHeading">Tips & Tricks</h>
+            <p>You can't buy it, you can only discover it... </it></p>
+            <ul class="tipsbuttons">
+                <li><button id="tipUpgradeValue" style="background: rgba(255, 255, 255, 0.445); ">Tip <span>1</span></button></li>
+                <li><button id="tipButtonsPressed" style="background: rgba(255, 255, 255, 0.445);">Tip <span>2</span></button></li>
+                <li><button id="tipLucky" style="background: rgba(255, 255, 255, 0.445); ">Tip <span>3</span></button></li>
+            </ul>
+            <div class="unlocker">
+            <label id="unlockMe" onclick="unlocker()">Unlock me by discovering <br>all of the tips & tricks...</label>
+            </div>
+        </div>
+        <div class="hiddenButton">
+            <button id="hiddenButton" style="opacity: 0; display: block; " onclick="hiddenBttn()">Sh...</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
